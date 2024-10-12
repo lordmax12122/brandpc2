@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/positions.css">
+  <link rel="stylesheet" href="../scss/main.css" />
+</head>
+
+<body>
+  <header class="main">
+    <div class="container main__pages-container">
+      <a href="../index.html" class="main__pages-logo">Brand<span class="main__secondpart-logo">PC</span></a>
+      <ul class="main__pages-list">
+        <li class="main__pages-item">
+          <a href="../index.html" class="main__pages-link main__link-line">Студія</a>
+        </li>
+        <li class="main__pages-item">
+          <a href="../portfolio.html" class="main__pages-link">Портфоліо</a>
+        </li>
+        <li class="main__pages-item">
+          <a href="#" class="main__pages-link ">Контакти</a>
+        </li>
+      </ul>
+      <ul class="main__contacts-list">
+        <li class="main__contacts-item">
+          <a href="malito:info@devstudio.com" class="main__contacts-malito main__contacts-link">
+            <svg class="main__icon" width="20" height="16">
+              <use href="../images/symbol-defs.svg#icon-envelope-hover"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="main__contacts-item">
+          <a href="tel:+380961111111" class="main__contacts-tel main__contacts-link">
+            <svg class="main__icon" width="10" height="16">
+              <use href="../images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+      <button burger-modal-open class="main__button">
+        <svg class="main__burger">
+          <use href="../images/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="pc">
+      <div class="container pc__main">
+        <div class="pc__div">
+          <img class="pc__img" src="../images/pc.jpg" alt="pc">
+        </div>
+        <div class="pc__container">
+          <h2 class="pc__name">Dell 3400 </h2>
+          <h3 class="pc__price">15000$</h3>
+          <h3 class="pc__call">Зателефонувати:</h3>
+          <button class="pc__button">+1111111111</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__mix">
+          <div class="footer__info">
+            <a href="index.html" class="footer__pages-logo">Brand<span class="footer__secondpart-logo">PC</span></a>
+            <address class="footer__pages-contacts-address">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
+            <ul class="footer__pages-contacts-list">
+              <li class="footer__pages-contacts-item">
+                <a href="malito:info@devstudio.com" class="footer__pages-contacts-a">info@devstudio.com</a>
+              </li>
+              <li class="footer__pages-contacts-item">
+                <a href="tel:+380961111111" class="footer__pages-contacts-a">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <h2 class="footer__text">Приєднуйтесь</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="https://www.instagram.com/" class="footer__link">
+                  <svg class="footer__items">
+                    <use href="../images/symbol-defs.svg#icon-instagram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://twitter.com/?lang=uk" class="footer__link">
+                  <svg class="footer__items">
+                    <use href="../images/symbol-defs.svg#icon-twitter">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://www.facebook.com/" class="footer__link">
+                  <svg class="footer__items">
+                    <use href="../images/symbol-defs.svg#icon-facebook">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="https://linkedin.com/" class="footer__link">
+                  <svg class="footer__items">
+                    <use href="../images/symbol-defs.svg#icon-linkedin">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="footer__box-form" action="">
+          <h2 class="footer__box-title">Підпишіться на розсилку</h2>
+          <div class="footer__box-container">
+            <input type="mail" class="footer__box-input" placeholder="E-mail" required />
+            <button class=" footer__box-button" type="submit">Підписатися
+              <svg class="footer__box-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+.main {
+   position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  border: solid 1px #ececec;
+  background-color: white;
+  z-index: 100;
+  @media screen and (max-width: 767px) {
+    @include section-padding($top: 16px, $bottom: 16px);
+  }
+  @media screen and (min-width: 768px) {
+    @include section-padding($top: 26px, $bottom: 26px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include section-padding($top: 24px, $bottom: 25px);
+  }
+
+  &__pages-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__pages {
+    color: $title-color;
+  }
+
+  &__pages-list {
+    display: none;
+    gap: 50px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  &__pages-logo {
+    color: $accent-color;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+
+  &__secondpart-logo {
+    color: $links-color;
+    margin-right: 93px;
+  }
+
+  &__pages-link {
+    color: $links-color;
+    @extend %header-text;
+    letter-spacing: 0.28px;
+    position: relative;
+  }
+
+  &__pages-link:hover {
+    color: $accent-color;
+    @extend %transition;
+  }
+
+  &__pages-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    margin-top: 28px;
+    background-color: $accent-color;
+  }
+
+  &__pages-item:hover > &__pages-link::after {
+    opacity: 1;
+    @extend %transition;
+  }
+
+  &__link-line {
+    color: $accent-color;
+  }
+
+  &__link-line:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 1;
+    position: absolute;
+    margin-top: 28px;
+    opacity: 1;
+  }
+
+  &__contacts-list {
+    gap: 50px;
+    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  &__contacts-malito {
+    color: $description-color;
+    @extend %header-text;
+    letter-spacing: 0.28px;
+  }
+
+  &__contacts-tel {
+    color: $description-color;
+    @extend %header-text;
+    letter-spacing: 0.28px;
+  }
+
+  &__contacts-malito:hover {
+    color: $accent-color;
+    @extend %transition;
+  }
+
+  &__contacts-tel:hover {
+    color: $accent-color;
+    @extend %transition;
+  }
+
+  &__contacts-list-item &__contacts-link {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+
+  &__contacts-link:hover > &__icon {
+    fill: $accent-color;
+    @extend %transition;
+  }
+
+  &__icon {
+    fill: #757575;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__burger {
+    fill: black;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__button {
+    border: none;
+    margin-left: auto;
+    background: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
